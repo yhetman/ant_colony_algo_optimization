@@ -2,7 +2,7 @@
 # /* ************************************************************************** */
 # /*                                                                            */
 # /*                                                                            */
-# /*   AntColonyClass.py	                                                      */
+# /*   AntColonyClass.py	                                                    */
 # /*                                                                            */
 # /*   By: yhetman <hetmanyuliia@gmail.com>                                     */
 # /*                                                                            */
