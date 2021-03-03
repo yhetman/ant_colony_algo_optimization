@@ -20,8 +20,8 @@ from big_matrix import generate_big_matrix
 
 ## SETTING VARIABLES
 
-n_ants = 10            # Number of ants running per iteration
-n_elite_ants = 10      # Number of best ants who deposit pheromone
+n_ants = 1            # Number of ants running per iteration
+n_elite_ants = 1      # Number of best ants who deposit pheromone
 n_iterations = 100     # Number of iterations
 p_decay = 0.9          # Rate how much pheromone decays
 alpha = 1              # exponenet on pheromone
@@ -31,7 +31,7 @@ beta = 1               # exponent on distance
 ## DISTANCE MATRIX -- (2D numpy.array): Square matrix of distances. Diagonal is assumed to be np.inf.
 
 
-distances = generate_big_matrix(10) # generator of bigger matrix
+distances = generate_big_matrix(20) # generator of bigger matrix
 # distances = np.array([[np.inf, 2, 2, 5, 7, 1, 1],
 #                       [2, np.inf, 4, 8, 2, 1, 9],
 #                       [2, 4, np.inf, 1, 3, 3, 4],
@@ -96,6 +96,6 @@ nx.draw(G, pos,
 
 
 now = str(datetime.now())
-plt.show()
-plt.savefig("../pngs/graph_pic" + now + ".png", dpi = 300)
+# plt.show()
+plt.savefig("../pngs/graph_pic" + now + ".png")
 print("Graph was saved to pngs folder.")
